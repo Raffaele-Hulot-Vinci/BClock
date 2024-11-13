@@ -4,13 +4,13 @@
   "description": "berlin clock",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
     "url": "https://github.vom/Raffaele-Hulot-Vinci/Bclock.git"
   },
-  "dependencies": {
+  "devDependencies": {
     "jasmine": "^5.1.0"
   },
   "author": "",
