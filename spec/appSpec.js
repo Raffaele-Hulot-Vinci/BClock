@@ -13,13 +13,12 @@ describe("a bunch of tests for the berlin clock", function() {
     });
 
     it("line should return - when seconds are odd", function() {
-        
-        const result = main.simpleSeconds(dateTwo);
+        const result = main.simpleSeconds(dateOne);
         expect(result).toBe("-");
     });
 
     it ("line should return R when seconds are even", function() {
-        const result = main.simpleSeconds(dateOne);
+        const result = main.simpleSeconds(dateTwo);
         expect(result).toBe("R");
     });
 
