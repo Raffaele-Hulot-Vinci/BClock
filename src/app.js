@@ -4,7 +4,7 @@ export class Main {
         const lights = time.getHours() % 5;
         let output = "";
         for(let index = 1; index <= 4; index++){
-            if(i%2==0){
+            if(index%2==0){
                 output += "R";
             }else{
                 output += "-";
