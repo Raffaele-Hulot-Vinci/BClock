@@ -9,7 +9,7 @@ export class Main {
             }else{
                 output += "-";
             }
-            output = " ";
+            output += " ";
 
         }
         return output;
@@ -24,7 +24,7 @@ export class Main {
         } else {
             output += "-"; 
         }
-        output = " ";
+        output += " ";
 
     }
     return output;
