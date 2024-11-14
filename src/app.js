@@ -9,7 +9,7 @@ export class Main {
             }else{
                 output += "-";
             }
-            let output = "";
+            output = " ";
 
         }
         return output;
@@ -24,7 +24,7 @@ export class Main {
         } else {
             output += "-"; 
         }
-        let output = "";
+        output = " ";
 
     }
     return output;
