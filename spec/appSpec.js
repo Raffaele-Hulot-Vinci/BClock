@@ -9,19 +9,19 @@ describe("a bunch of tests for the berlin clock", function() {
         const result = main.simpleMinutes(dateZero);
         expect(result).toBe("- - - - ");
     });
-    it("line should return - - - - when seconds are odd", function() {
+    it("line should return - when seconds are odd", function() {
         const main = new Main();
-        const dateSecondsOdd = new date(1,1,1,1,1,1);
+        const dateSecondsOdd = new Date(1,1,1,1,1,1);
         
         const result = main.simpleSeconds(dateSecondsOdd);
-        expect(result).toBe(" - - - -");
+        expect(result).toBe("-");
     }
     );
-    it ("line should return J J J J when seconds are even", function() {
+    it ("line should return R when seconds are even", function() {
         const main = new Main();
-        const dateSecondsEven = new date(2,2,2,2,2,2);
+        const dateSecondsEven = new Date(2,2,2,2,2,2);
         const result = main.simpleSeconds(dateSecondsEven);
-        expect(result).toBe(" J J J J");
+        expect(result).toBe("R");
     });
     it ("line should return the full Berlin Clock display for 00:00:00", function() {
         const result = "J\n----\n----\n------------\n----";

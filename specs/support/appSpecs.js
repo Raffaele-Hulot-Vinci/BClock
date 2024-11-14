@@ -14,9 +14,9 @@ describe("a bunch of tests for the berlin clock", function() {
         expect(result).toBe("- - - -");
 
     });
-    it("line should return - - - - when seconds are odd", function() {
+    it("line should return - when seconds are odd", function() {
         const result = main(dateSecondsOdd);
-        expect(result).toBe(dateSecondsOdd);
+        expect(result).toBe("-");
     }
     );
     it ("line should return J J J J when seconds are even", function() {

@@ -41,16 +41,13 @@ export class Main {
         return output;
     }
     simpleSeconds(time) {
-        const lights = time.getSeconds() % 5;
+        const lights = time.getSeconds() % 2;
         let output = "";
-        for(let i=1; i<=4; i++) {
-            if(i%2==0) {
-                output += "J";
-           } else {
-                output += "-";
-           }
+        if(lights%2==0) {
+            output += "R";
+        } else {
+            output += "-";
         }
-        
         return output;
     }
     getBerlinClock(minutes,seconds) {
