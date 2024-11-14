@@ -40,6 +40,23 @@ export class Main {
         return output;
     }
 
+    bigMinutes(time) {
+        const lights = time.getMinutes();
+        let output = "";
+        for (let index = 0; index < 60; index+=5) {
+            if(index<=lights){
+                if(index%15 == 0){
+                    output += "R";
+                }else{
+                    output += "J";
+                }
+            }else{
+                output += "-";
+            }
+            output += " ";
+        }
+    }
+
     simpleSeconds(time) {
         const lights = time.getSeconds() % 2;
         let output = "";
