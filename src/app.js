@@ -5,10 +5,12 @@ export class Main {
         let output = "";
         for(let index = 1; index <= 4; index++){
             if(i%2==0){
-                output += "J";
+                output += "R";
             }else{
                 output += "-";
             }
+            let output = "";
+
         }
         return output;
     }
@@ -18,10 +20,12 @@ export class Main {
         let output = "";
         for (let index = 1; index <= 4; index++) {
         if (index <= lights) {
-            output += "J";  
+            output += "R";  
         } else {
             output += "-"; 
         }
+        let output = "";
+
     }
     return output;
     }
