@@ -13,7 +13,7 @@ export class Main {
         return output;
     }
 
-    fivehours (time) {
+    fiveHours (time) {
         const lights = Math.floor(time.getHours() / 5);
         let output = "";
         for (let index = 1; index <= 4; index++) {
