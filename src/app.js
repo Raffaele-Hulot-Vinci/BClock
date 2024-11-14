@@ -37,9 +37,9 @@ export class Main {
             }
             output += " ";
         }
-        console.log(output);
         return output;
     }
+
     simpleSeconds(time) {
         const lights = time.getSeconds() % 2;
         let output = "";
@@ -50,6 +50,7 @@ export class Main {
         }
         return output;
     }
+
     getBerlinClock(minutes,seconds) {
         
         return [
