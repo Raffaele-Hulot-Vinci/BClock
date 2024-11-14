@@ -7,6 +7,8 @@ describe("a bunch of tests for the berlin clock", function() {
     const dateSecondsEven = new date(2,2,2,2,2,2);
     
 
+    
+
     it("bottom line should be - - - - when given 0 minutes", function(){
         const result = main(dateZero);
         expect(result).toBe("- - - -");
