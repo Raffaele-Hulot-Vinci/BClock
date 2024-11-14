@@ -67,6 +67,46 @@ describe("a bunch of tests for the berlin clock", function() {
         const main = new Main();
         
         
-    })
+    });
+    
+    it("line should be - - - - when given 0 hours", function() {
+        const result = main.simpleHours(dateZero);
+        expect(result).toBe("- - - - ");
+    });
+
+    it("line should be R - - - when given 1 hours", function() {
+        const result = main.simpleHours(dateOne);
+        expect(result).toBe("R - - - ");
+    });
+
+    it("line should be R R - - when given 2 hours", function() {
+        const result = main.simpleHours(dateTwo);
+        expect(result).toBe("- - - - ");
+    });
+
+    it("line should be R R R - when given 3 hours", function() {
+        const result = main.simpleHours(dateThree);
+        expect(result).toBe("R R R - ");
+    });
+
+    it("line should be R R R R when given 4 hours", function() {
+        const result = main.simpleHours(dateFour);
+        expect(result).toBe("R R R R ");
+    });
+
+    it("line should be - - - - when given 5 hours", function() {
+        const result = main.simpleHours(dateFive);
+        expect(result).toBe("- - - - ");
+    });
+
+    it("line should be R - - - when given 6 hours", function() {
+        const result = main.simpleHours(dateSix);
+        expect(result).toBe("R - - - ");
+    });
+
+    it("line should be R R - - when given 7 hours", function() {
+        const result = main.simpleHours(dateSeven);
+        expect(result).toBe("R R - - ");
+    });
 
 });
