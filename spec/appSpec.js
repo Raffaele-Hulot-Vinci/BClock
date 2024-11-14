@@ -151,42 +151,42 @@ describe("a bunch of tests for the berlin clock", function() {
     });
 
     it("fivehours should be - - - - when given 0 hours", function() {
-        const result = main.fivehours(dateZero);
+        const result = main.fiveHours(dateZero);
         expect(result).toBe("- - - - ");
     });
 
     it("fivehours should be - - - - when given 1 hours", function() {
-        const result = main.fivehours(dateOne);
+        const result = main.fiveHours(dateOne);
         expect(result).toBe("- - - - ");
     });
 
     it("fivehours should be - - - - when given 2 hours", function() {
-        const result = main.fivehours(dateTwo);
+        const result = main.fiveHours(dateTwo);
         expect(result).toBe("- - - - ");
     });
 
     it("fivehours should be - - - - when given 3 hours", function() {
-        const result = main.fivehours(dateThree);
+        const result = main.fiveHours(dateThree);
         expect(result).toBe("- - - - ");
     });
 
     it("fivehours should be - - - - when given 4 hours", function() {
-        const result = main.fivehours(dateFour);
+        const result = main.fiveHours(dateFour);
         expect(result).toBe("- - - - ");
     });
 
     it("fivehours should be R - - - when given 5 hours", function() {
-        const result = main.fivehours(dateFive);
+        const result = main.fiveHours(dateFive);
         expect(result).toBe("R - - - ");
     });
 
     it("fivehours should be R - - - when given 6 hours", function() {
-        const result = main.fivehours(dateSix);
+        const result = main.fiveHours(dateSix);
         expect(result).toBe("R - - - ");
     });
 
     it("fivehours should be R - - - when given 7 hours", function() {
-        const result = main.fivehours(dateSeven);
+        const result = main.fiveHours(dateSeven);
         expect(result).toBe("R - - - ");
     });
 
