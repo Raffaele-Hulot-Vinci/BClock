@@ -47,14 +47,19 @@ describe("a bunch of tests for the berlin clock", function() {
         expect(result).toBe("J - - - ");
     });
 
-    it("line should return - when seconds are odd", function() {
+    it("line should return - when second is 1", function() {
         const result = main.simpleSeconds(dateOne);
         expect(result).toBe("-");
     });
 
-    it ("line should return R when seconds are even", function() {
+    it ("line should return R when second is 2", function() {
         const result = main.simpleSeconds(dateTwo);
         expect(result).toBe("R");
+    });
+
+    it("line should return - when second is 3", function() {
+        const result = main.simpleSeconds(dateThree);
+        expect(result).toBe("-");
     });
 
     it ("line should return the full Berlin Clock display for 00:00:00", function() {
