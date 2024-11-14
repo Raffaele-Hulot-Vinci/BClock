@@ -2,6 +2,7 @@
   "name": "bclock",
   "version": "1.0.0",
   "description": "berlin clock",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "jasmine"
@@ -11,7 +12,7 @@
     "url": "https://github.vom/Raffaele-Hulot-Vinci/Bclock.git"
   },
   "devDependencies": {
-    "jasmine": "^5.1.0"
+    "jasmine": "^5.4.0"
   },
   "author": "",
   "license": "ISC"

@@ -1,14 +1,17 @@
 export class Main {
 
     simpleMinutes (time) {
-        lights = time.getMinutes() % 5;
+        const lights = time.getMinutes() % 5;
+        let output = "";
         for (let index = 1; index <= 4; index++) {
             if(index<=lights){
-                print("J");
+                output += "J";
             }else{
-                print("-");
+                output += "-";
             }
-            print(" ");
+            output += " ";
         }
+        console.log(output);
+        return output;
     }
 }
