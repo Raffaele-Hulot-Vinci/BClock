@@ -11,6 +11,15 @@ describe("a bunch of tests for the berlin clock", function() {
     const dateSix = new Date(6,6,6,6,6,6);
     const dateSeven = new Date(7,7,7,7,7,7);
     const dateEight = new Date(8,8,8,8,8,8);
+    const dateNine = new Date(9,9,9,9,9,9);
+    const dateTen = new Date(10,10,10,10,10,10);
+    const dateEleven = new Date(11,11,11,11,11,11);
+    const dateTwelve = new Date(12,12,12,12,12,12);
+    const dateFirteen = new Date(13,13,13,13,13,13);
+    const dateFourteen = new Date(14,14,14,14,14,14);
+    const dateFifteen = new Date(15,15,15,15,15,15);
+    const dateSixteen = new Date(16,16,16,16,16,16);
+    const dateSeventeen = new Date(17,17,17,17,17,17);
 
     it("simpleMinutes should be - - - - when given 0 minutes", function(){
         const result = main.simpleMinutes(dateZero);
@@ -68,7 +77,7 @@ describe("a bunch of tests for the berlin clock", function() {
         expect(result).toBe("- - - - ");
     });
 
-    
+
     it ("line should return the full Berlin Clock display for 00:00:00", function() {
         const result = "J\n----\n----\n------------\n----";
         const main = new Main();
