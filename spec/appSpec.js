@@ -62,6 +62,13 @@ describe("a bunch of tests for the berlin clock", function() {
         expect(result).toBe("-");
     });
 
+
+    it("bigMinutes sould be - - - - when given 0", function() {
+        const result = main.bigMinutes(dateZero);
+        expect(result).toBe("- - - - ");
+    });
+
+    
     it ("line should return the full Berlin Clock display for 00:00:00", function() {
         const result = "J\n----\n----\n------------\n----";
         const main = new Main();
