@@ -43,7 +43,7 @@ export class Main {
     bigMinutes(time) {
         const lights = time.getMinutes();
         let output = "";
-        for (let index = 0; index < 60; index+=5) {
+        for (let index = 5; index < 60; index+=5) {
             if(index<=lights){
                 if(index%15 == 0){
                     output += "R";
@@ -55,6 +55,7 @@ export class Main {
             }
             output += " ";
         }
+        return output;
     }
 
     simpleSeconds(time) {
