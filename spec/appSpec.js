@@ -72,9 +72,34 @@ describe("a bunch of tests for the berlin clock", function() {
     });
 
 
-    it("bigMinutes sould be - - - - when given 0", function() {
+    it("bigMinutes sould be - - - - - - - - - - - when given 0", function() {
         const result = main.bigMinutes(dateZero);
-        expect(result).toBe("- - - - ");
+        expect(result).toBe("- - - - - - - - - - - ");
+    });
+
+    it("bigMinutes sould be - - - - - - - - - - - when given 1", function() {
+        const result = main.bigMinutes(dateOne);
+        expect(result).toBe("- - - - - - - - - - - ");
+    });
+
+    it("bigMinutes sould be - - - - - - - - - - - when given 2", function() {
+        const result = main.bigMinutes(dateTwo);
+        expect(result).toBe("- - - - - - - - - - - ");
+    });
+
+    it("bigMinutes sould be - - - - - - - - - - - when given 3", function() {
+        const result = main.bigMinutes(dateThree);
+        expect(result).toBe("- - - - - - - - - - - ");
+    });
+
+    it("bigMinutes sould be - - - - - - - - - - - when given 4", function() {
+        const result = main.bigMinutes(dateFour);
+        expect(result).toBe("- - - - - - - - - - - ");
+    });
+
+    it("bigMinutes sould be J - - - - - - - - - - when given 5", function() {
+        const result = main.bigMinutes(dateFive);
+        expect(result).toBe("J - - - - - - - - - - ");
     });
 
 
